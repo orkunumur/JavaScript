@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window ve document Objesi</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+    <div>
+      <h1>Window Object</h1>
+      <p id="window">
+        console.log(window) JavaScript dilinde kullanılan bir kod parçasıdır ve
+        programcıların web sayfasındaki JavaScript kodlarını hata ayıklama
+        (debug) yapmalarını kolaylaştırır. window global nesnesi, web sayfasının
+        en üst düzey JavaScript nesnesidir. console.log() ise, JavaScript'te bir
+        mesajı tarayıcının konsoluna (console) yazdırmak için kullanılan bir
+        yöntemdir. Bu kod satırı, tarayıcının konsolunda window nesnesini
+        yazdırır. Konsol, programcıların web sayfasındaki JavaScript kodlarını
+        takip etmelerine, hata ayıklamalarına ve test etmelerine olanak tanır.
+        console.log() gibi yöntemler, programcıların web sayfasındaki kodun
+        hangi aşamada olduğunu görmelerine ve değişkenlerin değerlerini takip
+        etmelerine yardımcı olur. Bu nedenle, console.log(window) gibi kod
+        satırları hata ayıklama sırasında oldukça yararlıdır.
+      </p>
+      <img src="/SYNTAX/window_obj.png" alt="">
+    </div>
+
+    <div class="Doc">
+      <h1>Document Objesi</h1>
+
+      <p id="document">
+        JavaScript'te, document objesi, bir web sayfasındaki HTML belgesini
+        temsil eder. Bu obje, HTML belgesindeki tüm öğeleri (elements) içeren
+        bir ağaç yapısını (DOM) sağlar ve bu öğeleri manipüle etmek için bir
+        dizi yöntem ve özellik sunar. document objesi, programcıların JavaScript
+        kullanarak bir web sayfasının içeriğini dinamik olarak değiştirmesine,
+        öğeleri eklemesine, kaldırmasına veya değiştirmesine olanak tanır.
+        Örneğin, document objesi, HTML belgesindeki öğeleri seçmek,
+        özelliklerini değiştirmek veya bir öğe içindeki metni değiştirmek gibi
+        işlemler yapmak için kullanılabilir. Aşağıda document objesi ile örnek
+        bir kod parçası verilmiştir. Bu kod parçası, HTML belgesindeki "example"
+        id'sine sahip bir öğenin metnini "Hello, world!" olarak değiştirir.
+      </p>
+      <p>document.getElementById("example").innerHTML = "Hello, world!";</p>
+    </div>
+  </body>
+</html>
