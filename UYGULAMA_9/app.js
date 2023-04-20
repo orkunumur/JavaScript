@@ -28,24 +28,25 @@ let urun5 = {
 let urunler = [urun1, urun2, urun3, urun4, urun5];
 let filtreliUrunler = [];
 let kullaniciUrunIsmi = prompt("Bir ürün ismi giriniz");
+
 filtreliUrunleriDoldur(urunler);
 filtreliUrunleriYazdir(filtreliUrunler);
 
+
 function filtreliUrunleriDoldur(urunler) {
     urunler.forEach(function (urun) {
-        if (urun.isim.toUpperCase().includes(kullaniciUrunIsmi.toUpperCase(), 0)){
-            filtreliUrunler.push(urun)
+        if (urun.isim.toUpperCase().includes(kullaniciUrunIsmi.toUpperCase(), 0)) {
+            filtreliUrunler.push(urun);
         }
     });
+
 }
 
-function filtreliUrunleriYazdir(yazdirilacak){
-    yazdirilacak.forEach(function (urun)  {
+function filtreliUrunleriYazdir(urunler) {
+    urunler.forEach(function (urun) {
         console.log("----------------------------------------");
-        console.log(`
-        Ürün İsmi: ${urun.isim}
-        Ürün Kategori ${urun.kategori}
-        Ürün Fiyat ${urun.fiyat} TL`)
+        console.log("|" + urun.isim + "|" + urun.fiyat + "|" + urun.kategori);
+        console.log("----------------------------------------");
     });
-
 }
+
