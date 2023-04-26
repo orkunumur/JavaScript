@@ -52,7 +52,7 @@ img {
 .circle {
     fill: none;
     stroke: #b3b0b0;
-    stroke-width: 9;
+    stroke-width: 15;
     stroke-miterlimit: 10;
 }
 
