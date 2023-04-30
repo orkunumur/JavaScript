@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events III</title>
+  </head>
+<html>
+  <body>
+    <div>
+      <h2 style="font-size: 3rem" id="baslik1">Events</h2>
+      <p style="font-size: 1.5rem">
+        HTML Events An HTML event can be something the browser does, or
+        something a user does. Here are some examples of HTML events: An HTML
+        web page has finished loading An HTML input field was changed An HTML
+        button was clicked Often, when events happen, you may want to do
+        something. JavaScript lets you execute code when events are detected.
+        HTML allows event handler attributes, with JavaScript code, to be added
+        to HTML elements.
+      </p>
+      <ul style="font-size: 1.5rem">
+        <li>Focus: The onfocus event occurs when an element gets focus. The onfocus event is often used on input fields.</li><br>
+        Enter your name: <input type="text" onfocus="myFunction(this)"><br><br>
+        <script>function myFunction(x) {
+            x.style.background = "red";
+        }</script>
+
+        <li>Blur: The onblur event occurs when an HTML element loses focus. The onblur event is often used on input fields. The onblur event is often used with form validation (when the user leaves a form field).</li><br>
+        Enter your name: <input type="text" id="fname" onblur="myBlur()"><br><br>
+        <script>
+            function myBlur() {
+                let x = document.getElementById("fname");
+                x.value = x.value.toUpperCase();
+                }
+        </script>
+
+        <li>Copy: The oncopy event occurs when the user starts a copy process in the browser.
+
+            The oncopy event occurs when the user copies element content (like a text copy).
+            
+            The oncopy event also occurs when the user copies a whole element (like an image).</li>
+        <li>Paste: The onpaste event occurs when the user pastes some content into an element.
+
+            The onpaste event is mostly used on input elements with type="text".</li>
+            <li>Cut: The oncut event occurs when the user cuts the content of an element.
+
+                The oncut event is mostly used on <input> elements with type="text".</li>,
+                <li>The onselect event occurs after some text has been selected in an element.
+
+                    The onselect event is mostly used on (input type="text") or (textarea) elements.</li>
+                    Enter your name: <input type="text" id="fname2" ><br><br>
+
+      </ul>
+    </div>
+         <script src="app2.js"></script>
+  </body>
+</html>
