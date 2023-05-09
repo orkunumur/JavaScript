@@ -34,3 +34,19 @@ console.log(value);
 value.forEach(valueinfo => {
     console.log(valueinfo);
 })
+
+// Obje içersine metot ekleme:
+
+let user1 = {
+    firstname: "asdsadas",
+    lastname: "vxcvcxvcv",
+    score : [1,2,3,4,], 
+    isActive: true,
+    age: 20,
+    gender: "male",
+    shortName: function() {
+        return `${this.firstname[0].toUpperCase()}. ${this.lastname}`
+    }
+}
+console.log(user1);
+console.log(user1.shortName());

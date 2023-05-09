@@ -10,8 +10,11 @@ lang4 = langs[3]
 
 [lang1,lang2,lang3,lang4] = langs
 
+let [lang_1, lang_2, ...lang] = langs
 
 console.log(lang1, lang2 , lang3 , lang4)
+
+console.log(lang_1, lang_2 , lang) // 3 ve 4. diller farklı bir array de.
 
 
 const hesapla = (a,b)=>{
@@ -48,3 +51,10 @@ console.log(isim);
 console.log(soyisim);
 console.log(maas);
 console.log(yas);
+
+// Diğer bilgileri otherInfo adlı bir object'e yolladı.
+
+let {firstName:ad,lastName:soyad , ...otherInfo} = person
+console.log(ad);
+console.log(soyad);
+console.log(otherInfo);
